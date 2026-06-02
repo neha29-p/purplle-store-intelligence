@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Datasets and Media (Crucial for this challenge)
+data/
+outputs/
+*.mp4
+*.avi
+*.mkv
+*.csv
+*.json
+*.jsonl
+*.zip
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp

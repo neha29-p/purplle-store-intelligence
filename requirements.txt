@@ -1,0 +1,14 @@
+# Core computer vision and tracking
+ultralytics
+opencv-python
+
+# Backend API and server
+fastapi
+uvicorn
+
+# Frontend Dashboard
+streamlit
+
+# Data Processing
+pandas
+numpy
