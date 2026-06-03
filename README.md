@@ -131,37 +131,37 @@ Windows PowerShell:
 
 .venv\Scripts\Activate.ps1
 
-Install Dependencies
+### Install Dependencies
 
 pip install -r requirements.txt
 
 ---
 
-Running the API Locally
+### Running the API Locally
 
-Start the FastAPI server:
+### Start the FastAPI server:
 
 python -m uvicorn app.main:app --reload --port 8000
 
-Available URLs (while the application is running):
+### Available URLs (while the application is running):
 
-API Root:
+### API Root:
 
 http://localhost:8000
 
-Swagger Documentation:
+### Swagger Documentation:
 
 http://localhost:8000/docs
 
-Health Check:
+### Health Check:
 
 http://localhost:8000/health
 
-Example:
+### Example:
 
 curl http://localhost:8000/health
 
-Expected Response:
+### Expected Response:
 
 {
   "status": "healthy",
@@ -170,27 +170,27 @@ Expected Response:
 
 ---
 
-Running with Docker
+### Running with Docker
 
-Build and start the application:
+## Build and start the application:
 
 docker compose up --build
 
-After startup:
+## After startup:
 
-API Root:
+## API Root:
 
 http://localhost:8000
 
-Swagger Documentation:
+## Swagger Documentation:
 
 http://localhost:8000/docs
 
-Health Check:
+## Health Check:
 
 http://localhost:8000/health
 
-Stop containers:
+## Stop containers:
 
 docker compose down
 
