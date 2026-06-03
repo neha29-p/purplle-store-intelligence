@@ -117,7 +117,7 @@ http://localhost:8501
 
 Swagger Documentation:
 
-http://localhost:8000/docs
+http://localhost:8501/docs
 
 ---
 
