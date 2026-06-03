@@ -1,3 +1,20 @@
+# PROMPT:
+# I need a validation suite for POS analytics calculations used by store managers and business stakeholders.
+#
+# The objective is to ensure that sales data is aggregated correctly and transformed into actionable business metrics.
+#
+# The test should validate:
+# - Total sales calculations
+# - Department-level performance
+# - Brand-level performance
+# - KPI generation
+# - Aggregation consistency
+#
+# The implementation should prioritize business accuracy because these metrics influence operational and merchandising decisions.
+#
+# CHANGES MADE:
+# Adapted calculations to align with the retail reporting requirements of the project.
+#
 import pandas as pd
 
 df = pd.read_csv(

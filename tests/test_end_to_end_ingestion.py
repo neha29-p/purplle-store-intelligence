@@ -1,3 +1,10 @@
+# PROMPT:
+# Create an end-to-end ingestion test for a retail analytics platform.
+# Validate event ingestion, storage, processing, and retrieval workflows.
+#
+# CHANGES MADE:
+# Added project-specific validation for retail event processing.
+#
 from pipeline.event_generator import create_entry_event
 from pipeline.event_client import send_event
 

@@ -1,3 +1,20 @@
+# PROMPT:
+# I need a comprehensive validation suite for tracking visitors across video streams after person detection has been completed.
+#
+# The objective is to verify that tracked identities remain stable across frames and that customer movement is represented accurately.
+#
+# The test should validate:
+# - Identity persistence
+# - Continuous movement tracking
+# - Temporary detection loss handling
+# - Re-identification scenarios
+# - Consistent visitor counts
+#
+# Accurate tracking is critical because occupancy analytics, visitor journeys, and store traffic reports depend directly on this component.
+#
+# CHANGES MADE:
+# Added retail traffic scenarios and aligned validations with the project's tracking architecture.
+#
 import sys
 from pathlib import Path
 

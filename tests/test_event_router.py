@@ -1,3 +1,10 @@
+# PROMPT:
+# Create tests for routing retail analytics events.
+# Ensure events reach the correct processing components.
+#
+# CHANGES MADE:
+# Adapted routing validation for the project's event architecture.
+#
 from pipeline.event_router import EventRouter
 
 router = EventRouter()

@@ -1,3 +1,20 @@
+# PROMPT:
+# I need a validation suite for extracting metadata from CCTV video assets used throughout the retail analytics platform.
+#
+# The purpose of this test is to ensure that metadata extraction remains accurate and reliable before videos enter the analytics pipeline.
+#
+# The test should validate:
+# - Video duration
+# - Frame count
+# - Resolution information
+# - Frame rate extraction
+# - Metadata consistency across different video files
+#
+# Since downstream analytics depend on correct video properties, any metadata issues should be detected as early as possible.
+#
+# CHANGES MADE:
+# Added validation scenarios based on CCTV footage used within the project and aligned checks with analytics pipeline requirements.
+#
 from pathlib import Path
 import cv2
 

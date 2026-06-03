@@ -1,3 +1,10 @@
+# PROMPT:
+# Generate tests for retail analytics event generation.
+# Validate event structure, payload consistency, and metadata creation.
+#
+# CHANGES MADE:
+# Added project-specific event validation rules.
+#
 from pipeline.event_generator import create_entry_event
 
 event = create_entry_event(

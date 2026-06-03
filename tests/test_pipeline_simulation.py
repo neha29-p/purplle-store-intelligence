@@ -1,3 +1,20 @@
+# PROMPT:
+# I want an end-to-end simulation test that validates the complete retail analytics pipeline.
+#
+# The goal is to verify that data flows correctly from video processing through event generation and analytics reporting.
+#
+# The test should cover:
+# - Input processing
+# - Event creation
+# - Event routing
+# - Metrics generation
+# - Final reporting outputs
+#
+# This simulation should provide confidence that all pipeline components work together correctly before deployment.
+#
+# CHANGES MADE:
+# Added project-specific business metrics and KPI validation checks.
+#
 from pipeline.visitor_registry import VisitorRegistry
 from pipeline.zone_manager import ZoneManager
 from pipeline.event_router import EventRouter

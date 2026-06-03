@@ -1,3 +1,10 @@
+# PROMPT:
+# Build a camera analytics test that evaluates occupancy trends from CCTV footage.
+# Calculate average occupancy, peak occupancy, and sample statistics.
+# Keep the implementation simple and suitable for retail analytics reporting.
+#
+# CHANGES MADE:
+# Adapted calculations to match project occupancy analyzer outputs.
 from pipeline.occupancy_analyzer import OccupancyAnalyzer
 
 
@@ -24,3 +31,4 @@ class CameraAnalyzer:
             ),
             "max_occupancy": max(samples),
         }
+

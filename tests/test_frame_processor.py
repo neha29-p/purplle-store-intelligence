@@ -1,3 +1,10 @@
+# PROMPT:
+# Build tests for processing video frames in a retail analytics pipeline.
+# Validate frame ingestion, preprocessing, and output consistency.
+#
+# CHANGES MADE:
+# Simplified execution flow for local testing and debugging.
+#
 import sys
 import os
 

@@ -1,3 +1,20 @@
+# PROMPT:
+# I need a validation suite that verifies the integration between YOLO detections and the visitor tracking engine.
+#
+# The objective is to ensure that detected individuals are assigned stable identities and can be tracked accurately over time.
+#
+# The test should validate:
+# - Detection-to-tracker integration
+# - Identity persistence
+# - Movement continuity
+# - Entry and exit recognition
+# - Consistent visitor statistics
+#
+# This integration is a critical foundation for occupancy analytics and customer movement insights.
+#
+# CHANGES MADE:
+# Added end-to-end detection and tracking scenarios based on retail store traffic conditions.
+#
 import sys
 from pathlib import Path
 

@@ -1,3 +1,19 @@
+# PROMPT:
+# I need a validation suite for the video detection workflow used to process CCTV footage.
+#
+# The goal is to confirm that YOLO detections are generated consistently across different video segments.
+#
+# The test should verify:
+# - Successful frame processing
+# - Person detection outputs
+# - Detection consistency
+# - Handling of videos with limited activity
+#
+# The implementation should represent realistic store surveillance conditions.
+#
+# CHANGES MADE:
+# Added validation scenarios based on retail CCTV footage analysis.
+#
 from ultralytics import YOLO
 import cv2
 

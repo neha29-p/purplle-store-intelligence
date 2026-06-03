@@ -1,3 +1,10 @@
+# PROMPT:
+# Create tests for hourly sales analytics.
+# Validate aggregation logic, trends, and KPI calculations.
+#
+# CHANGES MADE:
+# Customized assertions for retail sales reporting requirements.
+#
 import pandas as pd
 
 df = pd.read_csv(

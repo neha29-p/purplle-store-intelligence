@@ -1,3 +1,10 @@
+# PROMPT:
+# Build a test for customer entry and exit detection.
+# Verify movement across store boundaries and accurate counting logic.
+#
+# CHANGES MADE:
+# Adapted scenarios to match visitor tracking implementation.
+#
 import sys
 from pathlib import Path
 

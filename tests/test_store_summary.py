@@ -1,3 +1,20 @@
+# PROMPT:
+# I need a store-level analytics summary validation that combines operational and business metrics into a single report.
+#
+# The test should verify that visitor analytics, occupancy analytics, and sales analytics are correctly consolidated.
+#
+# Validation should include:
+# - Footfall metrics
+# - Occupancy metrics
+# - Sales KPIs
+# - Summary generation
+# - Report consistency
+#
+# The objective is to ensure that the final dashboard presents reliable and decision-ready information.
+#
+# CHANGES MADE:
+# Added KPI checks and summary validation tailored to the store intelligence dashboard.
+#
 import sys
 from pathlib import Path
 
