@@ -1,0 +1,7 @@
+.venv
+__pycache__
+*.pyc
+.git
+purplle-store-intelligence.zip
+outputs
+data
