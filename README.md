@@ -113,11 +113,11 @@ python -m uvicorn app.main:app --reload --port 8000
 
 API:
 
-http://localhost:8501
+http://localhost:8000
 
 Swagger Documentation:
 
-http://localhost:8501/docs
+http://localhost:8000/docs
 
 ---
 
