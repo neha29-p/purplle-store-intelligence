@@ -1,5 +1,11 @@
 from math import sqrt
 
+from pipeline.event_logger import (
+    write_event,
+    create_entry_event,
+    create_exit_event
+)
+
 class VisitorTracker:
 
     def __init__(self):
@@ -56,19 +62,31 @@ class VisitorTracker:
 
                 previous_y = self.visitors[matched_id]["y"]
 
-                # ENTRY
                 if (
                     previous_y > self.counting_line
                     and cy <= self.counting_line
                 ):
+
                     self.entries += 1
 
-                # EXIT
+                    write_event(
+                        create_entry_event(
+                            matched_id
+                        )
+                    )
+
                 elif (
                     previous_y < self.counting_line
                     and cy >= self.counting_line
                 ):
+
                     self.exits += 1
+
+                    write_event(
+                        create_exit_event(
+                            matched_id
+                        )
+                    )
 
                 self.visitors[matched_id] = {
                     "x": cx,
