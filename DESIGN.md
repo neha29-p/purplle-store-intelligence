@@ -103,6 +103,7 @@ Each line in the file represents a single event record encoded as a valid JSON o
 ```json
 {"event_type":"entry","id_token":"ID_1001","store_code":"store_1076","camera_id":"cam1","event_timestamp":"2026-06-04T18:00:00","is_staff":false}
 
+
 ## Observability and Monitoring
 
 Production readiness is improved through middleware-based request logging.
