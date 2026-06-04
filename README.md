@@ -73,6 +73,7 @@ pipeline/
 ├── process_video.py
 ├── event_generator.py
 ├── event_router.py
+├── event_logger.py
 ├── visitor_registry.py
 └── zone_manager.py
 
@@ -378,11 +379,14 @@ Each line in the file represents a single event encoded as a valid JSON object.
 * entry
 * exit
 * zone_entered
+* zone_exited
+* queue_completed
+* queue_abandoned
 
 #### Example Event
 
 ```json
-{"event_type":"entry","id_token":"ID_1001","store_code":"store_1076","camera_id":"cam1","event_timestamp":"2026-06-04T18:00:00","is_staff":false}
+{"event_type":"queue_completed","track_id":102,"zone_name":"Billing Counter Queue","wait_seconds":8,"abandoned":false}
 ```
 
 #### Purpose
