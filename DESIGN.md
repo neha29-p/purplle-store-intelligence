@@ -215,5 +215,4 @@ The event schema follows the sample_events.jsonl specification provided in the c
 ```json
 {"event_type":"entry","id_token":"ID_1001","store_code":"store_1076","camera_id":"cam1","event_timestamp":"2026-06-04T18:00:00","is_staff":false}
 
-```json
 {"event_type":"queue_completed","track_id":102,"zone_name":"Billing Counter Queue","wait_seconds":8,"abandoned":false}
