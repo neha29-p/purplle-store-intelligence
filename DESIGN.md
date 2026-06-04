@@ -1,4 +1,4 @@
-# Apex Retail Store Intelligence API - Design
+# Purplle Store Intelligence Platform 
 
 ## Overview
 
@@ -199,14 +199,21 @@ Event logs are stored at:
 data/events/events.jsonl
 
 Each line in the file represents a single event record encoded as a valid JSON object. This approach enables efficient event streaming, easy validation, and compatibility with analytics pipelines.
+The event schema follows the sample_events.jsonl specification provided in the challenge. Event records include visitor events, zone interaction events, and queue analytics events to support downstream reporting and funnel analysis.
 
 ### Supported Event Types
 
 * entry
 * exit
 * zone_entered
+* zone_exited
+* queue_completed
+* queue_abandoned
 
 ### Example Event
 
 ```json
 {"event_type":"entry","id_token":"ID_1001","store_code":"store_1076","camera_id":"cam1","event_timestamp":"2026-06-04T18:00:00","is_staff":false}
+
+```json
+{"event_type":"queue_completed","track_id":102,"zone_name":"Billing Counter Queue","wait_seconds":8,"abandoned":false}
