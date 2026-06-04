@@ -26,14 +26,17 @@ The objective is to help retail operators understand customer behavior, monitor 
 - Footfall analytics
 - Conversion funnel analysis
 - Visitor behavior insights
-- Queue monitoring
 - Anomaly detection
 - Store performance metrics
+- Occupancy analytics
+- Entry and exit analytics
+- Zone-based visitor analytics
 
 ### Data Engineering & Observability
 
 - Automated analytics pipelines
 - Structured event generation
+- JSONL event logging
 - SQLite-based event storage
 - Request logging middleware
 - Health monitoring endpoints
