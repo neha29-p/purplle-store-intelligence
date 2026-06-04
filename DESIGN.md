@@ -82,6 +82,26 @@ Advantages:
 For large-scale deployments, the design can be extended to PostgreSQL or cloud-native storage solutions without significant architectural changes.
 
 ---
+## Event Logging Strategy
+
+The platform generates structured event logs in JSONL (JSON Lines) format to support analytics, reporting, auditing, and downstream processing workflows.
+
+Event logs are stored at:
+
+data/events/events.jsonl
+
+Each line in the file represents a single event record encoded as a valid JSON object. This approach enables efficient event streaming, easy validation, and compatibility with analytics pipelines.
+
+### Supported Event Types
+
+* entry
+* exit
+* zone_entered
+
+### Example Event
+
+```json
+{"event_type":"entry","id_token":"ID_1001","store_code":"store_1076","camera_id":"cam1","event_timestamp":"2026-06-04T18:00:00","is_staff":false}
 
 ## Observability and Monitoring
 
