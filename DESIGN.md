@@ -82,6 +82,62 @@ Advantages:
 For large-scale deployments, the design can be extended to PostgreSQL or cloud-native storage solutions without significant architectural changes.
 
 ---
+## Staff Exclusion Strategy
+
+Store employees can generate large amounts of movement data that may distort customer analytics.
+
+To prevent inaccurate business metrics, all analytics queries exclude events where:
+
+is_staff = true
+
+This ensures that occupancy counts, funnel analytics, zone engagement metrics, and conversion calculations represent customer behavior only.
+
+Staff events remain available for operational analysis but are excluded from customer-facing business intelligence metrics.
+---
+## Re-entry Handling
+
+Visitors may leave the store and return later during the same day.
+
+The platform maintains a visitor registry and tracks visit counts for previously observed visitors.
+
+When a known visitor re-enters the store, an additional entry event is generated while preserving the visitor identity and visit history.
+
+This approach supports:
+
+* Repeat visitor analysis
+* Accurate footfall measurement
+* Visit frequency analytics
+* Customer journey reconstruction
+---
+## Edge-Case Handling
+
+Several edge cases were considered during system design.
+
+### Temporary Occlusion
+
+Visitors may briefly disappear behind shelves or other shoppers. Tracking logic attempts to maintain identity continuity across short gaps.
+
+### Counting Line Boundary Conditions
+
+Visitors moving near the counting boundary are only counted when crossing direction is detected, reducing duplicate entries and exits.
+
+### Empty Store Conditions
+
+Analytics modules safely handle scenarios with zero visitors without causing divide-by-zero errors.
+
+### Queue Abandonment
+
+Visitors leaving the billing queue before service completion generate queue_abandoned events and are excluded from purchase conversions.
+
+### Staff Exclusion
+
+Employee movements are excluded from customer analytics using the is_staff flag.
+
+### Visitor Re-entry
+
+Returning visitors are tracked through persistent visitor identifiers to support repeat visit analytics.
+---
+
 ### Observability and Monitoring
 
 Production readiness is improved through middleware-based request logging.
