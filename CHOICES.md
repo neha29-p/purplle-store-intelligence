@@ -191,6 +191,44 @@ AI-generated suggestions were never accepted blindly. All recommendations were r
 The final implementation reflects engineering judgment combined with AI-assisted productivity.
 
 ---
+## 7. Event Schema Design
+
+### Options Considered
+
+* Unstructured log files
+* CSV-based event storage
+* Structured JSONL event schema
+
+### AI Suggestions
+
+AI-assisted reviews recommended using structured JSON events because they are easier to validate, process, and extend for analytics workflows.
+
+### Final Choice
+
+JSONL Event Schema
+
+### Rationale
+
+The platform generates event logs in JSONL format, where each line represents a single event record.
+
+Supported event types include:
+
+* entry
+* exit
+* zone_entered
+
+Benefits include:
+
+* Human-readable format
+* Easy integration with analytics pipelines
+* Streaming-friendly processing
+* Flexible schema evolution
+* Simple validation and debugging
+
+### Trade-off
+
+JSONL files can become large as event volume increases. Future implementations may migrate event storage to dedicated event-streaming or database solutions while preserving schema compatibility.
+
 
 ## Conclusion
 
