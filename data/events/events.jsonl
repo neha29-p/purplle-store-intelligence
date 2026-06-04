@@ -1,0 +1,6 @@
+{"event_type":"entry","id_token":"ID_1001","store_code":"store_1076","camera_id":"cam1","event_timestamp":"2026-06-04T18:00:00","is_staff":false}
+{"event_type":"zone_entered","track_id":1001,"store_id":"ST1076","camera_id":"CAM2","zone_id":"ZONE_01","zone_name":"Main Shelf","zone_type":"SHELF","event_time":"2026-06-04T18:01:00"}
+{"event_type":"exit","id_token":"ID_1001","store_code":"store_1076","camera_id":"cam1","event_timestamp":"2026-06-04T18:05:00","is_staff":false}
+{"event_type":"entry","id_token":"ID_1002","store_code":"store_1076","camera_id":"cam1","event_timestamp":"2026-06-04T18:06:00","is_staff":false}
+{"event_type":"zone_entered","track_id":1002,"store_id":"ST1076","camera_id":"CAM3","zone_id":"ZONE_02","zone_name":"Lipstick Shelf","zone_type":"SHELF","event_time":"2026-06-04T18:07:00"}
+{"event_type":"exit","id_token":"ID_1002","store_code":"store_1076","camera_id":"cam1","event_timestamp":"2026-06-04T18:12:00","is_staff":false}
