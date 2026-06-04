@@ -291,6 +291,7 @@ CHOICES.md
 - Technology selection rationale
 - Architectural trade-offs
 - Detection model evaluation
+- Event schema design decisions
 - API design decisions
 - Storage decisions
 - Scalability considerations
